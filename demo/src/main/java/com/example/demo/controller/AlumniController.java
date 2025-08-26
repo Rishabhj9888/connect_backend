@@ -27,7 +27,7 @@ public class AlumniController {
         return ResponseEntity.ok(alumniService.addAlumni(request));
     }
 
-    // STUDENT & ADMIN - search alumni by college name
+    //  - search alumni by college name
     @GetMapping("/search/{collegeName}")
     public ResponseEntity<List<AlumniResponse>> getAlumniByCollege(@PathVariable String collegeName) {
         return ResponseEntity.ok(alumniService.getAlumniByCollege(collegeName));
